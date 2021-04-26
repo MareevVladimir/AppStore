@@ -24,20 +24,26 @@
 
 <body>
     <!--Шапка сайта ----------------------------------------->
-    <ul class="menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <hr>
+     <div class="menu">
+        <ul class="menu-list">
+            <img src="img/apple-lgbt.png" alt="lgbt apple" type="image/png">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <span class="bucket"><a href="bucket.html">Корзина</a><img src="img/bucket.png" alt="bucket"></span>
+        </ul>
+        <hr>
+    </div>
+    
     <!-- Content -------------------------------------------->
 
     <h1>Контакты</h1>
     <h3>Оставьте свои контактные данные для обратной связи</h3>
     <form class="contacts-form">
-        <label>Фамилия</label> <input type="text" placeholder="Джоббс"><br>
+        <label>Фамилия</label> <input type="text" placeholder="Джобс"><br>
         <label>Имя</label> <input type="text" placeholder="Стив"><br>
         <label>Телефон</label> <input type="text" placeholder="+7999100500"><br>
+        <label>Email</label> <input type="text" placeholder="jobs.steve@apple.com"><br>
         <p><label>Гендер</label>
             <label>Мужчина</label> <input type="radio" name="gender" checked><br>
             <label>Женщина</label> <input type="radio" name="gender"><br>
@@ -79,10 +85,13 @@
     </script>
 
         <!--Хвост сайта------------------------------------------>
-    <hr>
-    <p>
-    <div align="center">&copy; <i>Все права защищены</i></div>
-    </p>
+    
+    <div class="footer">
+      <hr>    
+       <p>
+           <div class="authority" align="center">&copy; <i>Все права защищены</i></div>
+       </p>
+   </div>
 </body>
 
 </html>

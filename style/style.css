@@ -28,10 +28,48 @@ a {
     text-align: center;    
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
+.menu img {
+    height: 30px;
+    width: 30px;
+    float: left;
+    padding-right: 10px;
 }
+
+.bucket {    
+    float: right;
+    padding-right: 20 px;
+}
+.bucket img {        
+    padding-right: 20 px;
+}
+
+.bucket a:hover {
+    color: #0644B3;
+}
+
+.bucket-table td {
+    padding: 50px;
+    border-style: solid;
+    border-width: 1px;
+}
+.bucket-table tr:first-of-type td {
+    padding-top: 20px;    
+    padding-bottom: 20px;
+}
+
+.menu hr {
+    border: none;    
+    background:  linear-gradient(to right,         
+        #119F0B 0%,
+		#FFE500 16.66%,
+        #FD8C00 33.32%,		
+		#FE0000 49.98%,
+		#C22EDC 66.64%,		
+        #0644B3 83.3%);
+    height: 2px;
+}
+
+
 
 .menu a {
     font-size: 1.5em;
@@ -39,6 +77,19 @@ a {
     color: #424F52;
     list-style-type: none;
     text-decoration: none;
+}
+
+.menu-list li:hover:nth-child(2) a {
+    color: #FE0000;
+    font-size: 1.4em;
+}
+.menu-list li:hover:nth-child(3) a {
+    color: #119F0B;
+    font-size: 1.4em;
+}
+.menu-list li:hover:nth-child(4) a {
+    color: #C22EDC;
+    font-size: 1.4em;
 }
 
 .menu li {
@@ -59,6 +110,11 @@ h1 {
     background-color: #eaeaea;
 }
 
+.Good p:first-letter {
+    font-size: 1.5 em;
+    font-family: fantasy;
+}
+
 .Full {
     color: #484343;
     font-size: 16px;    
@@ -74,19 +130,23 @@ h1 {
     line-height: 16px;
 }
 
-.Perfomance {
-    list-style-image: url("../img/apple-min.png");    
+.Perfomance {    
     color: black;
     font-size: 22px;    
     line-height: 16px;
     text-align: left;
-    background-color: #E4E4E2;
+    background-color: white;
     
 }
 
-.Perfomance li {
-    padding-bottom: 5px;    
+.Perfomance td {
+    padding: 10px;    
     border-bottom: solid;
+    border-bottom-color: #119F0B;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-right-color: #C22EDC;
+    border-right-width: 1px;
 }
 
 
@@ -95,6 +155,39 @@ h1 {
     text-align: center;
     list-style-type: none;
 }
+
+#catalog-list li img {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+}
+
+
+#catalog-list li:nth-of-type(1n) img {
+    border-color: rgba(17,159, 11, 0.5);
+}
+#catalog-list li:nth-of-type(2n) img {
+    border-color: rgba(255, 229, 0, 0.5);
+}
+#catalog-list li:nth-of-type(3n) img {
+    border-color: rgba(253, 140, 0, 0.5);
+}
+#catalog-list li:nth-of-type(4n) img {
+    border-color: rgba(254, 0, 0, 0.5);
+}
+#catalog-list li:nth-of-type(5n) img {
+    border-color: rgba(194, 46, 220, 0.5);
+}
+#catalog-list li:nth-of-type(6n) img {
+    border-color: rgba(6, 68, 179, 0.5);
+}
+
+#catalog-list li img:hover {
+    border-color: rgba(0,0,0,0);
+}
+
 
 .contacts-form {   
     display: inline-block;
@@ -127,11 +220,39 @@ h1 {
     border-color: silver;
     border-style: none;
     line-height: 20px;
-    border-radius: 5px;    
+    border-radius: 5px;  
+    border-color:white;
+}
+
+.contacts-form input:nth-of-type(1), input:nth-of-type(2) {
+    text-transform: capitalize;
+}
+
+.contacts-form input:nth-of-type(4) {
+    color: black;
+    background: linear-gradient(to right,
+        rgba(17,159, 11, 0.1) 0%,
+		rgba(255, 229, 0, 0.1) 16.66%,
+        rgba(253, 140, 0, 0.1) 33.32%,		
+		rgba(254, 0, 0, 0.1) 49.98%,
+		rgba(194, 46, 220, 0.1) 66.64%,		
+        rgba(6, 68, 179, 0.1) 83.3%);
+}
+
+.contacts-form input:nth-of-type(4):focus {
+    color: brown;
+    border-width:0px;
+    background: linear-gradient(to right,
+        rgba(17,159, 11, 0.2) 0%,
+		rgba(255, 229, 0, 0.2) 16.66%,
+        rgba(253, 140, 0, 0.2) 33.32%,		
+		rgba(254, 0, 0, 0.2) 49.98%,
+		rgba(194, 46, 220, 0.2) 66.64%,		
+        rgba(6, 68, 179, 0.2) 83.3%);
 }
 
 .contacts-form input[type=submit] {
-  background-color: mediumseagreen;
+  background-color: rgba(17,159, 11, 1);
   border: none;
   border-radius: 5px;
   color: white;

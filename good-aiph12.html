@@ -10,12 +10,17 @@
 
 <body class="Good">
     <!--Шапка сайта ----------------------------------------->
-    <ul class="menu">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <hr>
+     <div class="menu">
+        <ul class="menu-list">
+            <img src="img/apple-lgbt.png" alt="lgbt apple" type="image/png">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <span class="bucket"><a href="bucket.html">Корзина</a><img src="img/bucket.png" alt="bucket"></span>
+        </ul>
+        <hr>
+    </div>
+
 
    <!--Content ----------------------------------------->
     <h1>Apple iPhone 12</h1>
@@ -24,14 +29,13 @@
     <p class="Short">Смартфон Apple iPhone 12 64Gb Чёрный</p>
 
     <h3 class="good-perfomance-header">Характеристики товара</h3>    
-    <ul class="Perfomance">
-        <li>Платформа iOS </li>
-        <li>Операционная система iOS 14 </li>
-        <li>Процессор </li>
-        <li>Процессор Apple A14 Bionic</li>
-        <li>Камера Да, двойная</li>
-        <li>Разрешение основной камеры 12 Мп</li>
-    </ul>
+    <table class="Perfomance">
+        <tr><td>Платформа</td> <td>iOS</td> </tr>
+        <tr><td>Операционная система</td> <td>iOS 14</td></tr>        
+        <tr><td>Процессор </td> <td>Apple A14 Bionic</td></tr> 
+        <tr><td>Камера</td> <td> Да, двойная</td></tr> 
+        <tr><td>Разрешение основной камеры </td> <td>12 Мп</td></tr> 
+    </table>
     
 
     <h3 class="good-full-header">Полное описание</h3>
@@ -42,14 +46,16 @@
         <b>Потрясающе быстрый</b><br>
         Работает Apple iPhone 12 на мощнейшем чипе нового поколения A14 Bionic. Общая производительность смартфона по сравнению с предыдущей моделью выросла на 40%. 4-ядерный графический ускоритель стал на 30% мощнее, а улучшенный 16‑ядерный нейропроцессор Neural Engine работает в 10 раз быстрее своего предшественника. При этом энергопотребление нового процессора сократилось. Любые приложения, любые операции этот смартфон выполнит без малейшей задержки. В iPhone 12 стало возможно выполнять сложнейшие алгоритмы обработки и машинного обучения: лучше всего это заметно в невероятных возможностях его камер.
     </p>
-    <p><a href="https://apple.com">Официальный сайт</a></p>
-    <p><a href="good-am1.html">Предыдущий товар</a> </p>
+    <a href="https://apple.com">Официальный сайт</a><br>
+    <a href="good-am1.html">Предыдущий товар</a>
 
-    <!--Хвост сайта------------------------------------------>
-    <hr>
-    <p>
-    <div align="center">&copy; <i>Все права защищены</i></div>
-    </p>
+    <!--Хвост сайта------------------------------------------>    
+    <div class="footer">
+      <hr>
+       <p>
+           <div class="authority" align="center">&copy; <i>Все права защищены</i></div>
+       </p>
+   </div>
 </body>
 
 </html>
