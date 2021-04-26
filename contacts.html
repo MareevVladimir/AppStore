@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/main-max.png" type="image/png">
+    <title>Контакты</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>KML Click Capture Sample</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <style>
+        #map {
+            display: inline-block;
+            height: 360px;
+            width: 600px;
+            overflow: hidden;            
+            float: center;
+            border: thin solid #333;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Шапка сайта ----------------------------------------->
+    <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <hr>
+    <!-- Content -------------------------------------------->
+
+    <h1>Контакты</h1>
+    <h3>Оставьте свои контактные данные для обратной связи</h3>
+    <form class="contacts-form">
+        <label>Фамилия</label> <input type="text" placeholder="Джоббс"><br>
+        <label>Имя</label> <input type="text" placeholder="Стив"><br>
+        <label>Телефон</label> <input type="text" placeholder="+7999100500"><br>
+        <p><label>Гендер</label>
+            <label>Мужчина</label> <input type="radio" name="gender" checked><br>
+            <label>Женщина</label> <input type="radio" name="gender"><br>
+            <label>Трансформер</label> <input type="radio" name="gender"><br>
+        </p><br>
+        <input type="submit" value="Подтвердить">
+    </form>
+
+    <h3>Наш адрес</h3>
+    <i>г.Мытищи, 2-я Институтская, д.24, подвал</i>
+    <div id="google-map" class="google-map"></div>
+
+    <div id="map"></div>
+    <script>
+        var map;
+        var src = 'map/apstore.kml';
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: new google.maps.LatLng(55.930242156067756, 37.794823569517455),
+                zoom: 17,
+                mapTypeId: 'terrain'
+            });
+
+            var kmlLayer = new google.maps.KmlLayer(src, {
+                suppressInfoWindows: true,
+                preserveViewport: false,
+                map: map
+            });
+            kmlLayer.addListener('click', function(event) {
+                var content = event.featureData.infoWindowHtml;
+                var testimonial = document.getElementById('capture');
+                testimonial.innerHTML = content;
+            });
+        }
+
+    </script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzAjjkqJyn2wcvOpCdgyI4hirp1N6mKQ8&callback=initMap">
+    </script>
+
+        <!--Хвост сайта------------------------------------------>
+    <hr>
+    <p>
+    <div align="center">&copy; <i>Все права защищены</i></div>
+    </p>
+</body>
+
+</html>

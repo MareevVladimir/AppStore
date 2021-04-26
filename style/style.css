@@ -1,0 +1,143 @@
+body {
+background-color: #f8f8f8;
+text-align: center;
+}
+p {
+    text-align: left;
+}
+
+a {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #7D8587;    
+}
+
+#main-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#main-txt {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+}
+#main-header {
+    text-align: center;    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    font-size: 1.5em;
+    font-style: oblique;
+    color: #424F52;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.Good h2,h3,h4,h5,h6 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    align-content: center;
+    background-color: #eaeaea;
+}
+
+.Full {
+    color: #484343;
+    font-size: 16px;    
+    line-height: 24px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.Short {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.Perfomance {
+    list-style-image: url("../img/apple-min.png");    
+    color: black;
+    font-size: 22px;    
+    line-height: 16px;
+    text-align: left;
+    background-color: #E4E4E2;
+    
+}
+
+.Perfomance li {
+    padding-bottom: 5px;    
+    border-bottom: solid;
+}
+
+
+#catalog-list li{
+    padding: 1.5em;
+    text-align: center;
+    list-style-type: none;
+}
+
+.contacts-form {   
+    display: inline-block;
+    text-align: left;
+    border-radius: 10;
+    width: 50%;
+    
+}
+
+.contacts-form label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.contacts-form label {
+    font-size: 16px;
+}
+
+.contacts-form input {
+  display: inline-block;
+  float: left;  
+}
+
+.contacts-form input[type=text] {
+    border-color: silver;
+    border-style: none;
+    line-height: 20px;
+    border-radius: 5px;    
+}
+
+.contacts-form input[type=submit] {
+  background-color: mediumseagreen;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 16px;
+}
